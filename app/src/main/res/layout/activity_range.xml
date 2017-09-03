@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context="com.example.mayazure.myodrivingtool.RangeActivity"
+    android:keepScreenOn="true"
+    android:background="@color/colorPrimary">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="15px"
+        android:background="@color/range_bg"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0px"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="100px"
+                android:textSize="60px"
+                android:textColor="@color/dark_text"
+                android:text="Relax"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="60px"
+                android:textAlignment="center"
+                android:text="..."
+                android:textColor="@color/dark_text"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingRight="100px"
+                android:textSize="60px"
+                android:textAlignment="viewEnd"
+                android:text="Anxious"
+                android:textColor="@color/dark_text"/>
+
+        </LinearLayout>
+
+        <SeekBar
+            android:id="@+id/range1"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:thumb="@drawable/thumb"
+            android:layout_width="match_parent"
+            android:layout_height="250px"
+            android:layout_marginTop="10px"
+            android:layout_marginBottom="30px"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="15px"
+        android:background="@color/range_bg"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="100px"
+                android:textSize="60px"
+                android:text="Calm"
+                android:textColor="@color/dark_text"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="60px"
+                android:textAlignment="center"
+                android:text="Annoyed"
+                android:textColor="@color/dark_text"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingRight="100px"
+                android:textSize="60px"
+                android:textAlignment="viewEnd"
+                android:text="Angry"
+                android:textColor="@color/dark_text"/>
+
+        </LinearLayout>
+
+
+        <SeekBar
+            android:id="@+id/range2"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:thumb="@drawable/thumb"
+            android:layout_width="match_parent"
+            android:layout_height="250px"
+            android:layout_marginTop="10px"
+            android:layout_marginBottom="30px"/>
+
+    </LinearLayout>
+
+    <!--<Button-->
+        <!--android:id="@+id/submit"-->
+        <!--android:layout_width="1000px"-->
+        <!--android:layout_height="120px"-->
+        <!--android:textSize="60px"-->
+        <!--android:text="Submit"-->
+        <!--android:onClick="submit"/>-->
+
+</LinearLayout>
